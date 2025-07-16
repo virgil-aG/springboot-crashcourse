@@ -1,0 +1,16 @@
+# Resources, HTTP Verbs, Resource URLs, and Use Cases
+
+| Resources   | HTTP Verb | Resource URL                                            | Use Cases                           |
+| ----------- | --------- | ------------------------------------------------------- | ----------------------------------- |
+| Visitors    | POST      | /tickets                                                | Creating a ticket                   |
+| Tickets     | POST      | /visitors/visitorID/tickets                             | Visitor buying a ticket             |
+| Shops       | GET       | /visitors/visitorID/tickets                             | Getting a ticket of a visitor       |
+| Enclosures  | GET       | /zoos/zooID/visitors/visitorID/tasks                    | Getting tasks a visitor can do      |
+| Animals     | GET       | /zoos/zooID/enclosures/enclosureID/animals              | Get all animals from an enclosure   |
+| Hospital    | POST      | /zoos/zooID/enclosures/enclosureID/animals/animalID/feeds| Feed an animal                      |
+| Feed        | GET       | /zoos/zooID/shops/shopID/items                          | Get all items from a shop           |
+| Tasks       | POST      | /zoos/zooID/shops/shopID/items/itemID/buys              | Buy an item                         |
+| Items       | POST      | /zoos/zooID/hospital/hospitalID/lectures/lectureID/listens| Listen to a lecture in hospital     |
+| Lectures    | DELETE    | /zoos/zooID/visitors/visitorID                          | Visitor leaves zoo                  |
+| Listens     |           |                                                         |                                     |
+| Buys        |           |                                                         |                                     |
